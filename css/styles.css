@@ -1,0 +1,37 @@
+.image_content {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.jumbotron {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/*==========CAROUSEL==========*/
+.main-carousel {
+  background-color: yellow;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/*==========MAIN CONTENT==========*/
+.main-content {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/*==========FOOTER==========*/
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
