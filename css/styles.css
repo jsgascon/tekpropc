@@ -9,18 +9,39 @@ body {
   padding: 25px;
 }
 
+/*==========JUMBOTRON==========*/
 .jumbotron {
-  background-color: black;
+  margin-bottom: 0;
+  border-radius: 0px !important;
+  min-height: 100vh;
+  width: 100%;
+}
+.jumbotron-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.jumbotron h2 {
+  font-size: 100px;
+  font-weight: bold;
+  position: relative;
   color: white;
   text-align: center;
-  padding: 25px;
+}
+.jumbotron p {
+  position: relative;
+  color: white;
 }
 
+/*==========CAROUSEL EXPERIMENT==========*/
 /*.test-container {
   max-height: 100%;
   width: 100%;
 }*/
-
+.item-gallery {
+  height: 75vh;
+  background-color: yellow;
+}
 .flex-container {
   /*min-height: 500px;*/
   /*width: 1000px;*/
@@ -47,55 +68,7 @@ body {
   width: 300px;
   border: 1px solid black;
 }
-/*==========CAROUSEL==========*/
-/*.carousel .item {
-  height: 75vh !important;
-}*/
-.item-gallery {
-  height: 75vh;
-  background-color: yellow;
-}
-.item-main-gallery {
-  height: 75vh;
-}
-
-.main-carousel {
-  background-color: yellow;
-  color: white;
-  text-align: center;
-  padding: 25px;
-}
-.slider-background-one {
-  max-height: 100%;
-  width: 100%;
-}
-.slider-background-two {
-  max-height: 100%;
-  width: 100%;
-}
-.slider-background-three {
-  max-height: 100%;
-  width: 100%;
-}
-
-/*==========ABOUT CONTENT==========*/
-.about-content {
-  height: 500px;
-}
-.about-title {
-  text-align: center;
-  font-weight: bold;
-}
-
-/*==========PORTFOLIO CONTENT==========*/
-.portfolio-content {
-  height: 500px;
-}
-.portfolio-title {
-  text-align: center;
-  font-weight: bold;
-}
-
+/*==========FLEXBOX EXPERIMENT==========*/
 .flex-container-test {
   min-height: 500px;
   /*width: 1000px;*/
@@ -125,6 +98,64 @@ body {
   padding: 10px;
 }
 
+
+
+/*==========CAROUSEL==========*/
+/*.carousel .item {
+  height: 75vh !important;
+}*/
+.item-main-gallery {
+  height: 75vh;
+}
+.main-carousel {
+  background-color: yellow;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+.slider-background-one {
+  max-height: 100%;
+  width: 100%;
+}
+.slider-background-two {
+  max-height: 100%;
+  width: 100%;
+}
+.slider-background-three {
+  max-height: 100%;
+  width: 100%;
+}
+
+/*==========MAIN CONTENT==========*/
+.main-content {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+.main-content-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*==========ABOUT CONTENT==========*/
+.about-content {
+  height: 500px;
+}
+.about-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*==========PORTFOLIO CONTENT==========*/
+.portfolio-content {
+  height: 500px;
+}
+.portfolio-title {
+  text-align: center;
+  font-weight: bold;
+}
+
 /*==========CONTACT CONTENT==========*/
 .contact-content {
   height: 500px;
@@ -134,15 +165,41 @@ body {
   font-weight: bold;
 }
 
-/*==========MAIN CONTENT==========*/
-.main-content {
-  background-color: green;
-  color: white;
-  padding: 25px;
+/*==========MEDIA==========*/
+/* Media Links */
+.media-links {
+	background: #333; /* grey */
+	text-align: center;
+  padding: 10px;
+	word-spacing: 5px;
 }
-.main-content-title {
-  text-align: center;
-  font-weight: bold;
+.media-links a {
+	text-decoration: none;
+	color: white;
+}
+.fa-facebook-official:before {
+	content: "\f230";
+	color: #3b5998;
+}
+.fa-twitter:before {
+	content: "\f099";
+	color: #0084b4;
+}
+.fa-youtube:before {
+	content: "\f167";
+	color: #b31217;
+}
+.fa-twitch:before {
+	content: "\f1e8";
+	color: #6441a5;
+}
+.fa-instagram:before {
+	content: "\f16d";
+	color: #125688;
+}
+.fa-linkedin-square:before {
+ 	content: "\f08c";
+	color: #0077B5;
 }
 
 /*==========FOOTER==========*/
@@ -154,103 +211,3 @@ body {
 }
 
 /*==========MEDIA QUERIES==========*/
-
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-
-    .flex-container {
-      /*min-height: 500px;
-      width: 1000px;*/
-
-      background-color: orange;
-
-      display: -webkit-flex;
-      display: flex;
-
-      flex-direction: column;
-
-      -webkit-flex-wrap: wrap;
-      flex-wrap: wrap;
-
-      justify-content: center;
-      /*align-content: center;*/
-      /*align-self: center;*/
-      /*align-items: center;*/
-    }
-
-    .flex-item {
-      /*min-height: 300px;
-      width: 250px;*/
-      border: 1px solid black;
-    }
-}
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
-
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
-
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
-
-}
-
-
-@media (max-width: @screen-xs-max) {
-
-}
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-
-}
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-
-}
-@media (min-width: @screen-lg-min) {
-
-}

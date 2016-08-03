@@ -13,7 +13,6 @@
 <!--NAVBAR wrapper-->
 <div class="container-fluid"> <!--header container-->
   <div class="row"> <!--header row-->
-
     <nav class="navbar navbar-inverse navbar-fixed-top"> <!--NAV begins-->
 		  <div class="container-fluid"> <!--container-fluid -->
 
@@ -25,26 +24,118 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a href="#"><img src="img/brand.png" class="navbar-brand"></a>
+		      <!-- <a href="#"><img src="img/brand.png" class="navbar-brand"></a> -->
+          <a href="#" class="navbar-brand">Joseph Gascon</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-left">
 						<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 
 		  </div><!-- /.container-fluid -->
 		</nav> <!--NAV ends-->
-
   </div> <!--end of header row-->
 </div><!--end of header container-->
 
+<!--JUMBOTRON wrapper-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 jumbotron">
+      <img src="img/waterfall.jpg" alt="Waterfall Background" class="img-responsive jumbotron-image">
+        <h2>Developer</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non iste recusandae ipsam perferendis vel hic atque. Earum eius, enim dicta, sint porro voluptatibus repellendus culpa doloribus vitae possimus officia facilis.</p>
+    </div>
+  </div>
+</div>
+
 <!--CAROUSEL wrapper-->
+<div class="container-fluid"> <!--carousel container-->
+  <div class="row"> <!--carousel row-->
+    <!--CAROUSEL wrapper-->
+    <div id="carousel-example-generic-1" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+    		<div class="item active item-main-gallery"> <!--first slide-->
+    			<img src="img/motherboard.jpg" alt="Motherboard Background" class="slider-background-one">
+    			<div class="carousel-caption">
+
+    		  </div>
+    		</div> <!--end of first slide-->
+    		<div class="item item-main-gallery"> <!--second slide-->
+    			<img src="img/yosemite.jpg" alt="Yosemite" class="slider-background-two">
+    		  <div class="carousel-caption">
+
+    			</div>
+    		</div> <!--end of second slide-->
+    		<div class="item item-main-gallery"> <!--third slide-->
+    			<img src="img/space.jpg" alt="Space" class="slider-background-three">
+    		  <div class="carousel-caption">
+
+    			</div>
+    		</div> <!--end of third slide-->
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic-1" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic-1" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> <!--end of CAROUSEL-->
+    <!--END CAROUSEL-->
+  </div> <!--end of carousel row-->
+</div> <!--end of carousel container-->
+
+<!--MAIN CONTENT wrapper-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 main-content">
+      <h2 class="main-content-title">Main Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nesciunt cum voluptatum dolorum incidunt aut facere eligendi repellat sint perferendis esse ex eveniet laudantium facilis iure, mollitia recusandae quibusdam quam.</p>
+    </div>
+  </div>
+</div>
+
+<a name="about"></a> <!--jump to this section-->
+<!--ABOUT wrapper-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 about-content">
+      <h2 class="about-title">About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolorem, sunt eveniet praesentium porro, expedita repudiandae non itaque, nemo saepe voluptas harum temporibus voluptatem atque. Asperiores corporis dolorem commodi facilis.</p>
+    </div>
+  </div>
+</div>
+
+<a name="portfolio"></a> <!--jump to this section-->
+<!--PORTFOLIO wrapper-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 portfolio-content">
+      <h2 class="portfolio-title">Portfolio</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolorem, sunt eveniet praesentium porro, expedita repudiandae non itaque, nemo saepe voluptas harum temporibus voluptatem atque. Asperiores corporis dolorem commodi facilis.</p>
+
+    </div>
+  </div>
+</div>
+
+<!--CAROUSEL EXPERIMENT wrapper-->
 <div class="container-fluid"> <!--carousel container-->
   <div class="row"> <!--carousel row-->
     <!--CAROUSEL wrapper-->
@@ -118,102 +209,6 @@
   </div> <!--end of carousel row-->
 </div> <!--end of carousel container-->
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12 image-content">
-      <h2>[IMAGE]</h2>
-    </div>
-  </div>
-</div>
-
-<!--JUMBOTRON wrapper-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12 jumbotron">
-      <h2>[JUMBOTRON]</h2>
-    </div>
-  </div>
-</div>
-
-<!--CAROUSEL wrapper-->
-<div class="container-fluid"> <!--carousel container-->
-  <div class="row"> <!--carousel row-->
-    <!--CAROUSEL wrapper-->
-    <div id="carousel-example-generic-1" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-    		<div class="item active item-main-gallery"> <!--first slide-->
-    			<img src="img/motherboard.jpg" alt="Motherboard Background" class="slider-background-one">
-    			<div class="carousel-caption">
-
-    		  </div>
-    		</div> <!--end of first slide-->
-    		<div class="item item-main-gallery"> <!--second slide-->
-    			<img src="img/yosemite.jpg" alt="Yosemite" class="slider-background-two">
-    		  <div class="carousel-caption">
-
-    			</div>
-    		</div> <!--end of second slide-->
-    		<div class="item item-main-gallery"> <!--third slide-->
-    			<img src="img/space.jpg" alt="Space" class="slider-background-three">
-    		  <div class="carousel-caption">
-
-    			</div>
-    		</div> <!--end of third slide-->
-      </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic-1" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic-1" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div> <!--end of CAROUSEL-->
-    <!--END CAROUSEL-->
-  </div> <!--end of carousel row-->
-</div> <!--end of carousel container-->
-
-<!--MAIN CONTENT wrapper-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12 main-content">
-      <h2 class="main-content-title">Main Content</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nesciunt cum voluptatum dolorum incidunt aut facere eligendi repellat sint perferendis esse ex eveniet laudantium facilis iure, mollitia recusandae quibusdam quam.</p>
-    </div>
-  </div>
-</div>
-
-<!--ABOUT wrapper-->
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 about-content">
-      <h2 class="about-title">About</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolorem, sunt eveniet praesentium porro, expedita repudiandae non itaque, nemo saepe voluptas harum temporibus voluptatem atque. Asperiores corporis dolorem commodi facilis.</p>
-    </div>
-  </div>
-</div>
-
-<!--PORTFOLIO wrapper-->
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 portfolio-content">
-      <h2 class="portfolio-title">Portfolio</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolorem, sunt eveniet praesentium porro, expedita repudiandae non itaque, nemo saepe voluptas harum temporibus voluptatem atque. Asperiores corporis dolorem commodi facilis.</p>
-
-    </div>
-  </div>
-</div>
-
 <!--FLEX BOX-->
 <div class="container">
   <div class="flex-container flex-container-test">
@@ -253,27 +248,29 @@
       </a>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
     </div>
-    <div class="flex-item flex-item-test">
-      <a href="#" class="thumbnail">
-        <img src="img/200x200.png" alt="...">
-      </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
-    </div>
-    <div class="flex-item flex-item-test">
-      <a href="#" class="thumbnail">
-        <img src="img/200x200.png" alt="...">
-      </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
-    </div>
   </div>
 </div>
 
+<a name="contact"></a> <!--jump to this section-->
 <!--CONTACT wrapper-->
 <div class="container">
   <div class="row">
     <div class="col-md-12 contact-content">
       <h2 class="contact-title">Contact</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolorem, sunt eveniet praesentium porro, expedita repudiandae non itaque, nemo saepe voluptas harum temporibus voluptatem atque. Asperiores corporis dolorem commodi facilis.</p>
+    </div>
+  </div>
+</div>
+
+<!--MEDIA wrapper-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 media-links">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i> Facebook</a>
+      <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> Twitter</a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> Instagram</a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i> YouTube</a>
+      <a href="https://www.twitch.tv/" target="_blank"><i class="fa fa-twitch fa-lg" aria-hidden="true"></i> Twitch</a>
     </div>
   </div>
 </div>
