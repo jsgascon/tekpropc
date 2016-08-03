@@ -1,23 +1,129 @@
-.image_content {
+body {
+  padding-top: 50px;
+}
+/*==========NAVBAR==========*/
+.image-content {
   background-color: blue;
   color: white;
   text-align: center;
   padding: 25px;
 }
 
+/*==========JUMBOTRON==========*/
 .jumbotron {
-  background-color: black;
+  margin-bottom: 0;
+  border-radius: 0px !important;
+  min-height: 100vh;
+  width: 100%;
+}
+.jumbotron-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.jumbotron h2 {
+  font-size: 100px;
+  font-weight: bold;
+  position: relative;
   color: white;
   text-align: center;
-  padding: 25px;
+}
+.jumbotron p {
+  position: relative;
+  color: white;
 }
 
+/*==========CAROUSEL EXPERIMENT==========*/
+/*.test-container {
+  max-height: 100%;
+  width: 100%;
+}*/
+.item-gallery {
+  height: 75vh;
+  background-color: yellow;
+}
+.flex-container {
+  /*min-height: 500px;*/
+  /*width: 1000px;*/
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  /*align-content: center;*/
+  /*align-self: center;*/
+  /*align-items: center;*/
+
+  /*padding-top: 100px;*/
+}
+
+.flex-item {
+  min-height: 400px;
+  width: 300px;
+  border: 1px solid black;
+}
+/*==========FLEXBOX EXPERIMENT==========*/
+.flex-container-test {
+  min-height: 500px;
+  /*width: 1000px;*/
+
+  background-color: orange;
+
+  display: -webkit-flex;
+  display: flex;
+
+  flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  /*align-content: center;*/
+  /*align-self: center;*/
+  /*align-items: center;*/
+}
+
+.flex-item-test {
+  min-height: 400px;
+  width: 300px;
+  border: 1px solid black;
+}
+.flex-item p {
+  padding: 10px;
+}
+
+
+
 /*==========CAROUSEL==========*/
+/*.carousel .item {
+  height: 75vh !important;
+}*/
+.item-main-gallery {
+  height: 75vh;
+}
 .main-carousel {
   background-color: yellow;
   color: white;
   text-align: center;
   padding: 25px;
+}
+.slider-background-one {
+  max-height: 100%;
+  width: 100%;
+}
+.slider-background-two {
+  max-height: 100%;
+  width: 100%;
+}
+.slider-background-three {
+  max-height: 100%;
+  width: 100%;
 }
 
 /*==========MAIN CONTENT==========*/
@@ -27,6 +133,74 @@
   text-align: center;
   padding: 25px;
 }
+.main-content-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*==========ABOUT CONTENT==========*/
+.about-content {
+  height: 500px;
+}
+.about-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*==========PORTFOLIO CONTENT==========*/
+.portfolio-content {
+  height: 500px;
+}
+.portfolio-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*==========CONTACT CONTENT==========*/
+.contact-content {
+  height: 500px;
+}
+.contact-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*==========MEDIA==========*/
+/* Media Links */
+.media-links {
+	background: #333; /* grey */
+	text-align: center;
+  padding: 10px;
+	word-spacing: 5px;
+}
+.media-links a {
+	text-decoration: none;
+	color: white;
+}
+.fa-facebook-official:before {
+	content: "\f230";
+	color: #3b5998;
+}
+.fa-twitter:before {
+	content: "\f099";
+	color: #0084b4;
+}
+.fa-youtube:before {
+	content: "\f167";
+	color: #b31217;
+}
+.fa-twitch:before {
+	content: "\f1e8";
+	color: #6441a5;
+}
+.fa-instagram:before {
+	content: "\f16d";
+	color: #125688;
+}
+.fa-linkedin-square:before {
+ 	content: "\f08c";
+	color: #0077B5;
+}
 
 /*==========FOOTER==========*/
 .footer {
@@ -35,3 +209,5 @@
   text-align: center;
   font-weight: bold;
 }
+
+/*==========MEDIA QUERIES==========*/
