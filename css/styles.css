@@ -10,7 +10,6 @@ font-family: 'Indie Flower', cursive;
 body {
   overflow-x:hidden;
   padding-top: 50px;
-
   width: 100%;
   height: 100vh;
   background: url('../img/tetris.jpg');
@@ -18,7 +17,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
 /*==========NAVBAR==========*/
@@ -33,7 +31,7 @@ body {
 }
 .jumbotron-image {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: url('../img/waterfall.jpg');
   background-position: center;
   background-size: cover;
@@ -53,8 +51,6 @@ body {
   font-weight: bold;
   color: white;
   text-align: center;
-  /*padding-top: 100px;*/
-  /*margin: 0px;*/
 }
 .jumbotron p {
   font-family: 'Source Code Pro', 600;
@@ -87,16 +83,22 @@ body {
 
 /*==========CAROUSEL==========*/
 .item {
-  height: 100vh;
+  height: 65vh;
 }
 .slider-background-one {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
+  max-height: 100%;
+  width: 100%;
 }
 .slider-background-two {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
+  max-height: 100%;
+  width: 100%;
 }
 .slider-background-three {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
+  max-height: 100%;
+  width: 100%;
 }
 .slider-background-fourth {
   background-color: blue;
@@ -145,7 +147,6 @@ body {
   color: white;
   font-size: 25px;
 }
-
 .about-content-right {
   color: white;
 }
@@ -197,7 +198,6 @@ body {
 .flex-item-test p {
   padding: 10px;
 }
-
 
 /*==========CONTACT CONTENT==========*/
 .contact-background {
@@ -275,8 +275,7 @@ input[type=checkbox] {
   font-size: 25px;
 }
 
-/*==========MEDIA==========*/
-/* Media Links */
+/*==========MEDIA CONTENT==========*/
 .media-links {
 	background: #333; /* grey */
 	text-align: center;
