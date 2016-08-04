@@ -13,43 +13,49 @@
 <!--NAVBAR wrapper-->
 <div class="container-fluid"> <!--header container-->
   <div class="row"> <!--header row-->
-    <nav class="navbar navbar-inverse navbar-fixed-top"> <!--NAV begins-->
-		  <div class="container-fluid"> <!--container-fluid -->
+      <nav class="navbar navbar-inverse navbar-fixed-top"> <!--NAV begins-->
+        <div class="container-fluid"> <!--container-fluid -->
+  		    <!-- Brand and toggle get grouped for better mobile display -->
+  		    <div class="navbar-header">
+  					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  		        <span class="sr-only">Toggle navigation</span>
+  		        <span class="icon-bar"></span>
+  		        <span class="icon-bar"></span>
+  		        <span class="icon-bar"></span>
+  		      </button>
+  		      <!-- <a href="#"><img src="img/brand.png" class="navbar-brand"></a> -->
+            <a href="#" class="navbar-brand">Joseph Gascon</a>
+  		    </div>
 
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <!-- <a href="#"><img src="img/brand.png" class="navbar-brand"></a> -->
-          <a href="#" class="navbar-brand">Joseph Gascon</a>
-		    </div>
-
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-left">
-						<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#contact">Contact</a></li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-
-		  </div><!-- /.container-fluid -->
-		</nav> <!--NAV ends-->
+  		    <!-- Collect the nav links, forms, and other content for toggling -->
+  		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+  						<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+  						<li><a href="#about">About</a></li>
+  						<li><a href="#portfolio">Portfolio</a></li>
+  						<li><a href="#contact">Contact</a></li>
+              <li><a href="#resources">Resources</a></li>
+  		      </ul>
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+  		    </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+  		</nav> <!--NAV ends-->
   </div> <!--end of header row-->
 </div><!--end of header container-->
 
 <!--JUMBOTRON wrapper-->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-12 jumbotron">
-      <img src="img/waterfall.jpg" alt="Waterfall Background" class="img-responsive jumbotron-image">
-        <h2>Developer</h2>
+    <div class="jumbotron">
+      <div class="jumbotron-image">
+        <h2>Web Developer</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non iste recusandae ipsam perferendis vel hic atque. Earum eius, enim dicta, sint porro voluptatibus repellendus culpa doloribus vitae possimus officia facilis.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -61,31 +67,70 @@
     <div id="carousel-example-generic-1" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic-1" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic-1" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic-1" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic-1" data-slide-to="4"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-    		<div class="item active item-main-gallery"> <!--first slide-->
-    			<img src="img/motherboard.jpg" alt="Motherboard Background" class="slider-background-one">
+    		<div class="item active"> <!--first slide-->
+    			<img src="img/yosemite.jpg" alt="Yosemite" class="slider-background-one">
     			<div class="carousel-caption">
-
-    		  </div>
-    		</div> <!--end of first slide-->
-    		<div class="item item-main-gallery"> <!--second slide-->
-    			<img src="img/yosemite.jpg" alt="Yosemite" class="slider-background-two">
-    		  <div class="carousel-caption">
-
+            <h2>Carousel Caption</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis suscipit blanditiis ut ea est velit recusandae? At, inventore itaque sed quia eaque maxime magnam possimus illo officia, optio nam?</p>
+						<a href="#" class="btn btn-default btn-lg button-color" role="button">Button</a>
     			</div>
+    		</div> <!--end of first slide-->
+    		<div class="item"> <!--second slide-->
+          <img src="img/motherboard.jpg" alt="Motherboard Background" class="slider-background-two">
+    		  <div class="carousel-caption">
+            <h2>Carousel Caption</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis suscipit blanditiis ut ea est velit recusandae? At, inventore itaque sed quia eaque maxime magnam possimus illo officia, optio nam?</p>
+						<a href="#" class="btn btn-default btn-lg button-color" role="button">Button</a>
+    		  </div>
     		</div> <!--end of second slide-->
-    		<div class="item item-main-gallery"> <!--third slide-->
+    		<div class="item"> <!--third slide-->
     			<img src="img/space.jpg" alt="Space" class="slider-background-three">
     		  <div class="carousel-caption">
+            <h2>Carousel Caption</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis suscipit blanditiis ut ea est velit recusandae? At, inventore itaque sed quia eaque maxime magnam possimus illo officia, optio nam?</p>
+						<a href="#" class="btn btn-default btn-lg button-color" role="button">Button</a>
+    		  </div>
+    		</div> <!--end of third slide-->
+    		<div class="item"> <!--fourth slide-->
+    			<div class="slider-background-fourth"></div>
+    		  <div class="carousel-caption">
+            <h2>Carousel Caption</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis suscipit blanditiis ut ea est velit recusandae? At, inventore itaque sed quia eaque maxime magnam possimus illo officia, optio nam?</p>
+						<a href="#" class="btn btn-default btn-lg button-color" role="button">Button</a>
+    		  </div>
+    		</div> <!--end of fourth slide-->
+        <div class="item"> <!--fifth slide-->
+          <div class="flex-container slider-background-fifth">
+            <div class="flex-item">
+              <a href="https://jsgascon.github.io/how-to-tutorials/" target="_blank" class="thumbnail">
+                <img src="img/how-to-tutorials.png" alt="how-to-tutorials" class="img-responsive">
+              </a>
+            </div>
+            <div class="flex-item">
+              <a href="https://jsgascon.github.io/pet-store/index.html" target="_blank" class="thumbnail">
+                <img src="img/pet-store-home.png" alt="pet-store-home" class="img-responsive">
+              </a>
+            </div>
+            <div class="flex-item">
+              <a href="https://jsgascon.github.io/restaurante/" target="_blank" class="thumbnail">
+                <img src="img/restaurante.png" alt="restaurante" class="img-responsive">
+              </a>
+            </div>
+          </div>
+    			<div class="carousel-caption">
 
     			</div>
-    		</div> <!--end of third slide-->
+    		</div> <!--end of fifth slide-->
+
       </div>
 
       <!-- Controls -->
@@ -102,161 +147,174 @@
   </div> <!--end of carousel row-->
 </div> <!--end of carousel container-->
 
-<!--MAIN CONTENT wrapper-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12 main-content">
-      <h2 class="main-content-title">Main Content</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nesciunt cum voluptatum dolorum incidunt aut facere eligendi repellat sint perferendis esse ex eveniet laudantium facilis iure, mollitia recusandae quibusdam quam.</p>
-    </div>
-  </div>
-</div>
-
-<a name="about"></a> <!--jump to this section-->
 <!--ABOUT wrapper-->
-<div class="container">
+<a name="about"></a> <!--jump to this section-->
+<div class="container about-background">
   <div class="row">
     <div class="col-md-12 about-content">
       <h2 class="about-title">About</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolorem, sunt eveniet praesentium porro, expedita repudiandae non itaque, nemo saepe voluptas harum temporibus voluptatem atque. Asperiores corporis dolorem commodi facilis.</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-6 about-content-left">
+      <a href="#" class="thumbnail center-block">
+        <img src="img/200x200.png" alt="...">
+      </a>
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nesciunt provident, consequuntur totam asperiores similique fuga voluptatibus. Eaque inventore, suscipit itaque, ducimus eligendi hic, explicabo deserunt accusantium unde rem commodi?</p>
+      </div>
+    </div>
+    <div class="col-md-6 about-content-right">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et atque dolorum veniam consequatur id inventore fugiat esse, reiciendis adipisci aliquid quo rem assumenda dolorem consectetur, reprehenderit pariatur facilis, recusandae alias.</p>
+    </div>
+  </div>
 </div>
 
-<a name="portfolio"></a> <!--jump to this section-->
+
 <!--PORTFOLIO wrapper-->
+<a name="portfolio"></a> <!--jump to this section-->
 <div class="container">
   <div class="row">
     <div class="col-md-12 portfolio-content">
       <h2 class="portfolio-title">Portfolio</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolorem, sunt eveniet praesentium porro, expedita repudiandae non itaque, nemo saepe voluptas harum temporibus voluptatem atque. Asperiores corporis dolorem commodi facilis.</p>
-
     </div>
   </div>
-</div>
-
-<!--CAROUSEL EXPERIMENT wrapper-->
-<div class="container-fluid"> <!--carousel container-->
-  <div class="row"> <!--carousel row-->
-    <!--CAROUSEL wrapper-->
-    <div id="carousel-example-generic-2" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-    		<div class="item active item-gallery"> <!--first slide-->
-    			<!-- <div style="width: 100%; height: 100%; background-color: red;"></div> -->
-          <div class="flex-container">
-            <div class="flex-item">
-              <a href="#" class="thumbnail">
-                <img src="img/200x200.png" alt="...">
-              </a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
-            </div>
-            <div class="flex-item">
-              <a href="#" class="thumbnail">
-                <img src="img/200x200.png" alt="...">
-              </a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
-            </div>
-            <div class="flex-item">
-              <a href="#" class="thumbnail">
-                <img src="img/200x200.png" alt="...">
-              </a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
-            </div>
-            <div class="flex-item">
-              <a href="#" class="thumbnail">
-                <img src="img/200x200.png" alt="...">
-              </a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
-            </div>
-          </div>
-    			<div class="carousel-caption">
-
-    		  </div>
-    		</div> <!--end of first slide-->
-    		<div class="item item-gallery"> <!--second slide-->
-    			<div style="width: 100%; height: 100%; background-color: green"></div>
-    		  <div class="carousel-caption">
-
-    			</div>
-    		</div> <!--end of second slide-->
-    		<div class="item item-gallery"> <!--third slide-->
-    			<div style="width: 100%; height: 100%; background-color: orange"></div>
-    		  <div class="carousel-caption">
-
-    			</div>
-    		</div> <!--end of third slide-->
+  <div class="row">
+    <!--FLEX BOX-->
+    <div class="flex-container-test">
+      <div class="flex-item-test">
+        <a href="https://jsgascon.github.io/how-to-tutorials/" target="_blank" class="thumbnail">
+          <img src="img/how-to-tutorials.png" alt="how-to-tutorials" class="img-responsive">
+        </a>
+        <div class="caption">
+          <h3>How-To-Tutorials</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nesciunt provident, consequuntur totam asperiores similique fuga voluptatibus. Eaque inventore, suscipit itaque, ducimus eligendi hic, explicabo deserunt accusantium unde rem commodi?</p>
+          <p><a href="https://jsgascon.github.io/how-to-tutorials/" target="_blank" class="btn btn-primary" role="button">View Site</a> <a href="#contact" class="btn btn-default" role="button">More Info</a></p>
+        </div>
       </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic-2" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic-2" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div> <!--end of CAROUSEL-->
-    <!--END CAROUSEL-->
-  </div> <!--end of carousel row-->
-</div> <!--end of carousel container-->
-
-<!--FLEX BOX-->
-<div class="container">
-  <div class="flex-container flex-container-test">
-    <div class="flex-item flex-item-test">
-      <a href="#" class="thumbnail">
-        <img src="img/200x200.png" alt="...">
-      </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
-    </div>
-    <div class="flex-item flex-item-test">
-      <a href="#" class="thumbnail">
-        <img src="img/200x200.png" alt="...">
-      </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
-    </div>
-    <div class="flex-item flex-item-test">
-      <a href="#" class="thumbnail">
-        <img src="img/200x200.png" alt="...">
-      </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
-    </div>
-    <div class="flex-item flex-item-test">
-      <a href="#" class="thumbnail">
-        <img src="img/200x200.png" alt="...">
-      </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
-    </div>
-    <div class="flex-item flex-item-test">
-      <a href="#" class="thumbnail">
-        <img src="img/200x200.png" alt="...">
-      </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
-    </div>
-    <div class="flex-item flex-item-test">
-      <a href="#" class="thumbnail">
-        <img src="img/200x200.png" alt="...">
-      </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, magni, optio. Voluptas, totam accusantium quis exercitationem at repudiandae illum! Sunt ipsum hic soluta aperiam iusto est aspernatur porro dolore, voluptates.</p>
+      <div class="flex-item-test">
+        <a href="https://jsgascon.github.io/pet-store/index.html" target="_blank" class="thumbnail">
+          <img src="img/pet-store-home.png" alt="pet-store-home" class="img-responsive">
+        </a>
+        <div class="caption">
+          <h3>Pet-Store-Home</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nesciunt provident, consequuntur totam asperiores similique fuga voluptatibus. Eaque inventore, suscipit itaque, ducimus eligendi hic, explicabo deserunt accusantium unde rem commodi?</p>
+          <p><a href="https://jsgascon.github.io/pet-store/index.html" target="_blank" class="btn btn-primary" role="button">View Site</a> <a href="#contact" class="btn btn-default" role="button">More Info</a></p>
+        </div>
+      </div>
+      <div class="flex-item-test">
+        <a href="https://jsgascon.github.io/restaurante/" target="_blank" class="thumbnail">
+          <img src="img/restaurante.png" alt="restaurante" class="img-responsive">
+        </a>
+        <div class="caption">
+          <h3>Restaurante</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nesciunt provident, consequuntur totam asperiores similique fuga voluptatibus. Eaque inventore, suscipit itaque, ducimus eligendi hic, explicabo deserunt accusantium unde rem commodi?</p>
+          <p><a href="https://jsgascon.github.io/restaurante/" target="_blank" class="btn btn-primary" role="button">View Site</a> <a href="#contact" class="btn btn-default" role="button">More Info</a></p>
+        </div>
+      </div>
+      <div class="flex-item-test">
+        <a href="#" class="thumbnail">
+          <img src="img/200x200.png" alt="...">
+        </a>
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nesciunt provident, consequuntur totam asperiores similique fuga voluptatibus. Eaque inventore, suscipit itaque, ducimus eligendi hic, explicabo deserunt accusantium unde rem commodi?</p>
+          <p><a href="#" class="btn btn-primary" role="button">View Site</a> <a href="#contact" class="btn btn-default" role="button">More Info</a></p>
+        </div>
+      </div>
+      <div class="flex-item-test">
+        <a href="#" class="thumbnail">
+          <img src="img/200x200.png" alt="...">
+        </a>
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nesciunt provident, consequuntur totam asperiores similique fuga voluptatibus. Eaque inventore, suscipit itaque, ducimus eligendi hic, explicabo deserunt accusantium unde rem commodi?</p>
+          <p><a href="#" class="btn btn-primary" role="button">View Site</a> <a href="#contact" class="btn btn-default" role="button">More Info</a></p>
+        </div>
+      </div>
+      <div class="flex-item-test">
+        <a href="#" class="thumbnail">
+          <img src="img/200x200.png" alt="...">
+        </a>
+        <div class="caption">
+          <h3>Thumbnail label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nesciunt provident, consequuntur totam asperiores similique fuga voluptatibus. Eaque inventore, suscipit itaque, ducimus eligendi hic, explicabo deserunt accusantium unde rem commodi?</p>
+          <p><a href="#" class="btn btn-primary" role="button">View Site</a> <a href="#contact" class="btn btn-default" role="button">More Info</a></p>
+        </div>
+      </div>
     </div>
   </div>
+
 </div>
 
-<a name="contact"></a> <!--jump to this section-->
 <!--CONTACT wrapper-->
+<a name="contact"></a> <!--jump to this section-->
+<div class="container contact-background"> <!--contact container-->
+	<div class="row"> <!--contact form main row-->
+		<div class="container"> <!--container for contact form section contents-->
+			<div class="col-md-12 contact-verbiage"> <!--contact form verbiage-->
+				<h2 class="contact-title-text">Contact</h2>
+				<div class="row"> <!--paragraphs starts-->
+					<div class="col-md-12">
+					<p class="contact-paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis deserunt doloremque voluptas ullam quos, quis, quaerat, blanditiis officiis itaque nostrum tempore. Odit sed modi unde error porro aliquam explicabo nesciunt.</p>
+					</div>
+				</div> <!--paragraph ends-->
+			</div> <!--end of contact form verbiage-->
+			<div class="row"> <!--contact form/map section-->
+				<div class="col-md-6"> <!--contact form section-->
+					<div class="col-md-9 contact-form-box"> <!--contact form col-->
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Name:</label><span style="color: red;">*</span>
+								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter your Name">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Email:</label><span style="color: red;">*</span>
+								<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter your Email">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Subject:</label><span style="color: red;">*</span>
+								<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your Subject">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Message:</label><span style="color: red;">*</span>
+								<textarea type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your Message"></textarea>
+							</div>
+							<div class="checkbox checkbox-container">
+								<label>
+									<input type="checkbox" value="">
+									<p style="padding-left: 10px;">I'm not a robot.</p>
+								</label>
+								<img src="img/recaptcha.png" alt="Recaptcha" class="img-responsive pull-right">
+							</div>
+							<button type="submit" class="btn btn-default center-block">Submit Message</button>
+							<p style="color: white;" align="center">All fields marked with <span style="color: red;">*</span> are required.</p>
+						</form>
+					</div> <!--End of contact form col-->
+				</div> <!--contact form-->
+				<div class="col-md-6"> <!--Map col-->
+					<h2 class="map-title">Bitwise Industries</h2>
+					<p class="map-info">
+						700 Van Ness Ave <br>
+						Fresno, CA 93721 <br>
+						P.(559) 500-3305 <br>
+					</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.6040610940117!2d-119.78796568474648!3d36.732069279231496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809460a5cfdf4b6b%3A0xab092ce50c284a0a!2sBitwise+Industries!5e0!3m2!1sen!2sus!4v1469328806455" width="500" height="400" frameborder="0" style="border:0"></iframe>
+				</div> <!--End of Map col-->
+			</div> <!--contact form/map section-->
+		</div> <!--end of container for contact form section contents-->
+	</div> <!--end of contact form main row-->
+</div><!--end of contact container-->
+
+<!--RESOURCES wrapper-->
+<a name="resources"></a> <!--jump to this section-->
 <div class="container">
   <div class="row">
-    <div class="col-md-12 contact-content">
-      <h2 class="contact-title">Contact</h2>
+    <div class="col-md-12 resources-content">
+      <h2>Resources</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolorem, sunt eveniet praesentium porro, expedita repudiandae non itaque, nemo saepe voluptas harum temporibus voluptatem atque. Asperiores corporis dolorem commodi facilis.</p>
     </div>
   </div>
