@@ -144,7 +144,7 @@ body {
 .about-content p {
   font-family: 'Indie Flower', cursive;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
 }
 .about-content-left {
   color: white;
@@ -159,7 +159,7 @@ body {
 .about-content-left p {
   font-family: 'Indie Flower', cursive;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
 }
 .about-content-left .thumbnail {
   background-color: transparent;
@@ -178,7 +178,7 @@ body {
 }
 .about-content-right p {
   font-family: 'Indie Flower', cursive;
-  font-size: 25px;
+  font-size: 30px;
 }
 .about-content-right a {
   text-decoration: none;
@@ -212,7 +212,7 @@ body {
 .portfolio-content p {
   font-family: 'Indie Flower', cursive;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
 }
 .flex-item-test img {
   width: 400px;
@@ -256,7 +256,7 @@ body {
 .contact-paragraph-text {
   font-family: 'Indie Flower', cursive;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
 }
 .contact-verbiage {
   padding-bottom: 50px;
@@ -295,7 +295,7 @@ input[type=checkbox] {
 }
 .map-info {
   font-family: 'Source Code Pro', 600;
-  font-size: 12px;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -316,7 +316,7 @@ input[type=checkbox] {
 .resources-content p {
   font-family: 'Indie Flower', cursive;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
 }
 .resources-content a {
   color: white;
