@@ -302,7 +302,7 @@ input[type=checkbox] {
 /*==========RESOURCES==========*/
 .resources-content {
   padding-top: 50px;
-  height: 500px;
+  min-height: 500px;
 }
 .resources-content h1 {
   font-family: 'Black Ops One', cursive;
