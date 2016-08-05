@@ -8,9 +8,8 @@ font-family: 'Indie Flower', cursive;
 */
 
 body {
-  overflow-x:hidden;
-  padding-top: 50px;
-
+  overflow-x:hidden; /* Removes the extra white space on the right side of body container */
+  padding-top: 50px; /* Adds space on top for navbar */
   width: 100%;
   height: 100vh;
   background: url('../img/tetris.jpg');
@@ -18,10 +17,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
 /*==========NAVBAR==========*/
+.navbar-nav a {
+  font-family: 'Black Ops One', cursive;
+  text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  color: yellow;
+}
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+  color: yellow;
+}
 
 /*==========JUMBOTRON==========*/
 .jumbotron {
@@ -33,7 +41,7 @@ body {
 }
 .jumbotron-image {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: url('../img/waterfall.jpg');
   background-position: center;
   background-size: cover;
@@ -46,23 +54,61 @@ body {
   justify-content: center;
   align-items: center;
 }
-.jumbotron-image h2 {
+.jumbotron-image h1 {
   font-family: 'Black Ops One', cursive;
   text-transform: uppercase;
   font-size: 100px;
   font-weight: bold;
-  color: white;
+  color: #fff;
   text-align: center;
-  /*padding-top: 100px;*/
-  /*margin: 0px;*/
+  text-shadow: 5px 5px 1px #000;
 }
 .jumbotron p {
   font-family: 'Source Code Pro', 600;
   color: white;
   text-align: center;
+  text-shadow: 1px 1px 1px #000;
+}
+/* TEXT GLOWING ANIMATION AND EFFECTS*/
+.jumbotron-image h1:hover {
+	animation: glowtext 1s infinite alternate;
+}
+/* Different states of overriding the color of links */
+/* http://stackoverflow.com/questions/10312857/blue-and-purple-default-links-how-to-remove */
+/*.jumbotron-image a, .jumbotron-image a:visited, .jumbotron-image a:hover, .jumbotron-image a:focus, .jumbotron-image a:hover, .jumbotron-image a:active {
+	text-decoration: none;
+}*/
+@keyframes glowtext {
+    to {
+    	text-shadow: 0px 0px 10px yellow;
+    }
 }
 
-/*==========CAROUSEL EXPERIMENT==========*/
+/*==========CAROUSEL==========*/
+.item {
+  height: 100vh;
+}
+.slider-background-one {
+  /*min-height: 100vh;*/
+  max-height: 100%;
+  width: 100%;
+}
+.slider-background-two {
+  /*min-height: 100vh;*/
+  max-height: 100%;
+  width: 100%;
+}
+.slider-background-three {
+  /*min-height: 100vh;*/
+  max-height: 100%;
+  width: 100%;
+}
+.slider-background-flex {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+}
+/*==========FLEXBOX IN CAROUSEL==========*/
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -71,59 +117,29 @@ body {
   align-items: center;
 }
 .flex-item {
-  height: 300px;
-  max-width: 300px;
+  height: 400px;
+  max-width: 400px;
   /*border: 1px solid black;*/
   background-color: white;
   color: black;
 }
 .flex-item img {
-  height: 300px;
-  width: 300px;
-}
-.flex-item p {
-  padding: 10px;
+  height: 400px;
+  width: 400px;
 }
 
-/*==========CAROUSEL==========*/
-.item {
-  height: 100vh;
-}
-.slider-background-one {
-  min-height: 100vh;
-}
-.slider-background-two {
-  min-height: 100vh;
-}
-.slider-background-three {
-  min-height: 100vh;
-}
-.slider-background-fourth {
-  background-color: blue;
-  height: 100%;
-  width: 100%;
-}
-.slider-background-fifth {
-  background-color: orange;
-  height: 100%;
-  width: 100%;
-}
-
-/*==========ABOUT CONTENT==========*/
+/*==========ABOUT==========*/
 .about-background {
-  /*border: 1px solid white;*/
-}
-.about-content {
   padding-top: 50px;
-  /*height: 500px;*/
 }
-.about-title {
+.about-content h1 {
   font-family: 'Black Ops One', cursive;
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
   color: white;
+  text-shadow: 5px 5px 1px #000;
 }
 .about-content p {
   font-family: 'Indie Flower', cursive;
@@ -145,27 +161,53 @@ body {
   color: white;
   font-size: 25px;
 }
-
+.about-content-left .thumbnail {
+  background-color: transparent;
+  border: none;
+}
+.about-content-left img {
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 50%;
+}
 .about-content-right {
   color: white;
+}
+.about-content-right {
+  text-align: center;
 }
 .about-content-right p {
   font-family: 'Indie Flower', cursive;
   font-size: 25px;
 }
+.about-content-right a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 40px;
+}
+.fa-linkedin-square:before {
+ 	content: "\f08c";
+	color: #0077B5;
+}
+.fa-github:before {
+  content: "\f09b";
+  color: black;
+}
 
-/*==========PORTFOLIO CONTENT==========*/
+/*==========PORTFOLIO==========*/
 .portfolio-content {
   padding-top: 50px;
-  /*height: 500px;*/
 }
-.portfolio-title {
+.portfolio-content h1 {
   font-family: 'Black Ops One', cursive;
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
   color: white;
+  text-shadow: 5px 5px 1px #000;
 }
 .portfolio-content p {
   font-family: 'Indie Flower', cursive;
@@ -179,14 +221,13 @@ body {
 .flex-item-test h3 {
   text-align: center;
 }
-
-/*==========FLEXBOX EXPERIMENT==========*/
+/*==========FLEXBOX IN PORTFOLIO==========*/
 .flex-container-test {
   min-height: 500px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 .flex-item-test {
   min-height: 500px;
@@ -195,21 +236,22 @@ body {
   background-color: white;
 }
 .flex-item-test p {
+  text-align: center;
   padding: 10px;
 }
 
-
-/*==========CONTACT CONTENT==========*/
+/*==========CONTACT==========*/
 .contact-background {
   padding-top: 50px;
 }
-.contact-title-text {
+.contact-verbiage h1 {
   font-family: 'Black Ops One', cursive;
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
   color: white;
+  text-shadow: 5px 5px 1px #000;
 }
 .contact-paragraph-text {
   font-family: 'Indie Flower', cursive;
@@ -223,7 +265,7 @@ body {
   color: #fff;
 }
 .contact-form-box {
-  background-color: #333;
+  background-color: blue;
   padding: 10px;
 }
 .checkbox-container {
@@ -244,42 +286,56 @@ input[type=checkbox] {
   -webkit-transform: scale(1.5);
 }
 .map-title {
+  font-family: 'Source Code Pro', 600;
   color: #fff;
-  /*font-family: 'Raleway', sans-serif;*/
   font-weight: bold;
-  text-transform: uppercase;
   font-size: 12px;
   margin: 0;
+  padding-top: 10px;
 }
 .map-info {
+  font-family: 'Source Code Pro', 600;
   font-size: 12px;
   color: #fff;
 }
 
-/*==========CONTACT CONTENT==========*/
+/*==========RESOURCES==========*/
 .resources-content {
   padding-top: 50px;
   height: 500px;
 }
-.resources-content h2 {
+.resources-content h1 {
   font-family: 'Black Ops One', cursive;
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
   color: white;
+  text-shadow: 5px 5px 1px #000;
 }
 .resources-content p {
   font-family: 'Indie Flower', cursive;
   color: white;
   font-size: 25px;
 }
+.resources-content a {
+  color: white;
+}
+.resources-content a:focus, .resources-content a:hover {
+  text-decoration: none;
+  color: yellow;
+}
 
 /*==========MEDIA==========*/
-/* Media Links */
-.media-links {
-	background: #333; /* grey */
+.media-container {
+  background: #333; /* grey */
 	text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.media-links {
   padding: 10px;
 	word-spacing: 5px;
   font-weight: bold;
@@ -287,6 +343,7 @@ input[type=checkbox] {
 .media-links a {
 	text-decoration: none;
 	color: white;
+  font-size: 20px;
 }
 .fa-facebook-official:before {
 	content: "\f230";
@@ -308,10 +365,6 @@ input[type=checkbox] {
 	content: "\f16d";
 	color: #125688;
 }
-.fa-linkedin-square:before {
- 	content: "\f08c";
-	color: #0077B5;
-}
 
 /*==========FOOTER==========*/
 .footer {
@@ -321,62 +374,320 @@ input[type=checkbox] {
   font-weight: bold;
 }
 
+/*=================================*/
+/*=================================*/
 /*==========MEDIA QUERIES==========*/
+/*=================================*/
+/*=================================*/
+
+/*
+https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries
+*/
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
 
-    /*==========  Mobile First Method  ==========*/
-
-    /* Custom, iPhone Retina */
-    @media only screen and (min-width : 320px) {
-
-    }
-
-    /* Extra Small Devices, Phones */
-    @media only screen and (min-width : 480px) {
-
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
-
-    }
-
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-
-    }
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-
-    }
-
-    /*==========  Non-Mobile First Method  ==========*/
+/*==========  Non-Mobile First Method  ==========*/
 
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
+      /*==========NAVBAR==========*/
+      /*==========JUMBOTRON==========*/
+      /*==========CAROUSEL==========*/
+      /*==========FLEXBOX IN CAROUSEL==========*/
+      /*==========ABOUT==========*/
+      /*==========PORTFOLIO==========*/
+      /*==========FLEXBOX IN PORTFOLIO==========*/
+      /*==========CONTACT==========*/
+      /*==========RESOURCES==========*/
+      /*==========MEDIA==========*/
+      /*==========FOOTER==========*/
 
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
+      /*==========CAROUSEL==========*/
+      .item {
+        height: 65vh;
+      }
+      .carousel-caption h2 {
+        font-size: 20px;
+      }
+      .carousel-caption p {
+        font-size: 15px;
+      }
+      .slider-background-one {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-two {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-three {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-flex {
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+      }
 
     }
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+      /*==========CAROUSEL==========*/
+      .item {
+        height: 65vh;
+      }
+      .carousel-caption h2 {
+        font-size: 20px;
+      }
+      .carousel-caption p {
+        font-size: 15px;
+      }
+      .slider-background-one {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-two {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-three {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-flex {
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+      }
 
     }
 
     /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px) {
+      /*==========JUMBOTRON==========*/
+      .jumbotron-image h1 {
+        font-family: 'Black Ops One', cursive;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        text-shadow: 5px 5px 1px #000;
+      }
+      .jumbotron p {
+        font-family: 'Source Code Pro', 600;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+      }
+      /*==========CAROUSEL==========*/
+      .item {
+        height: 65vh;
+      }
+      .carousel-caption h2 {
+        font-size: 20px;
+      }
+      .carousel-caption p {
+        font-size: 15px;
+      }
+      .slider-background-one {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-two {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-three {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-flex {
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+      }
+      /*==========FLEXBOX IN CAROUSEL==========*/
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .flex-item {
+        height: 200px;
+        max-width: 200px;
+        background-color: white;
+        color: black;
+      }
+      .flex-item img {
+        height: 200px;
+        width: 200px;
+      }
+      /*==========ABOUT==========*/
+      ..about-content h1 {
+        font-size: 40px;
+      }
+      .about-content p {
+        font-size: 20px;
+        text-align: center;
+      }
+      .about-content-left p {
+        font-size: 20px;
+      }
+      .about-content-right p {
+        font-size: 20px;
+      }
+      /*==========PORTFOLIO==========*/
+      .portfolio-content h1 {
+        font-size: 40px;
+      }
+      .portfolio-content p {
+        font-size: 20px;
+      }
+      /*==========CONTACT==========*/
+      .contact-verbiage h1 {
+        font-size: 40px;
+      }
+      .contact-paragraph-text {
+        font-size: 20px;
+      }
+      .map-section iframe {
+        text-align: center;
+        height: 250px;
+        width: 250px;
+      }
+      /*==========RESOURCES==========*/
+      .resources-content h1 {
+        font-size: 40px;
+      }
+      .resources-content p {
+        font-size: 20px;
+      }
+      /*==========MEDIA==========*/
+      .media-container {
+        display: flex;
+        flex-direction: column;
+      }
 
     }
 
     /* Custom, iPhone Retina */
     @media only screen and (max-width : 320px) {
+      /*==========JUMBOTRON==========*/
+      .jumbotron-image h1 {
+        font-family: 'Black Ops One', cursive;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        text-shadow: 5px 5px 1px #000;
+      }
+      .jumbotron p {
+        font-family: 'Source Code Pro', 600;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+      }
+      /*==========CAROUSEL==========*/
+      .item {
+        height: 65vh;
+      }
+      .carousel-caption h2 {
+        font-size: 20px;
+      }
+      .carousel-caption p {
+        font-size: 15px;
+      }
+      .slider-background-one {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-two {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-three {
+        min-height: 65vh;
+        width: 100%;
+      }
+      .slider-background-flex {
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+      }
+      /*==========FLEXBOX IN CAROUSEL==========*/
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .flex-item {
+        height: 200px;
+        max-width: 200px;
+        background-color: white;
+        color: black;
+      }
+      .flex-item img {
+        height: 200px;
+        width: 200px;
+      }
+      /*==========ABOUT==========*/
+      ..about-content h1 {
+        font-size: 40px;
+      }
+      .about-content p {
+        font-size: 20px;
+        text-align: center;
+      }
+      .about-content-left p {
+        font-size: 20px;
+      }
+      .about-content-right p {
+        font-size: 20px;
+      }
+      /*==========PORTFOLIO==========*/
+      .portfolio-content h1 {
+        font-size: 40px;
+      }
+      .portfolio-content p {
+        font-size: 20px;
+      }
+      /*==========CONTACT==========*/
+      .contact-verbiage h1 {
+        font-size: 40px;
+      }
+      .contact-paragraph-text {
+        font-size: 20px;
+      }
+      .map-section iframe {
+        text-align: center;
+        height: 250px;
+        width: 250px;
+      }
+      /*==========RESOURCES==========*/
+      .resources-content h1 {
+        font-size: 40px;
+      }
+      .resources-content p {
+        font-size: 20px;
+      }
+      /*==========MEDIA==========*/
+      .media-container {
+        display: flex;
+        flex-direction: column;
+      }
 
     }
