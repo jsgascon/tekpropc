@@ -1,344 +1,151 @@
-/*==========GOOGLE FONTS==========*/
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:600,400|Black+Ops+One|Indie+Flower);
+/*GOOGLE FONTS*/
 
-/*
-font-family: 'Source Code Pro',;
-font-family: 'Black Ops One', cursive;
-font-family: 'Indie Flower', cursive;
-*/
 
-body {
-  overflow-x:hidden; /* Removes the extra white space on the right side of body container */
-  padding-top: 50px; /* Adds space on top for navbar */
+/*NAVBAR*/
+.affix {
+  top: 0;
   width: 100%;
-  height: 100vh;
-  background: url('../img/tetris.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+}
+.navbar {
+  border-radius: 0px;
+}
+#navigation-bar {
+  z-index: 1;
 }
 
-/*==========NAVBAR==========*/
-.navbar-nav a {
-  font-family: 'Black Ops One', cursive;
-  text-transform: uppercase;
-}
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
-  color: yellow;
-}
-.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
-  color: yellow;
-}
-
-/*==========JUMBOTRON==========*/
-.jumbotron {
-  margin: 0;
-  border-radius: 0px !important;
-  min-height: 100vh;
-  width: 100%;
-  padding: 0px !important;
-}
+/*JUMBOTRON*/
 .jumbotron-image {
-  width: 100%;
-  min-height: 100vh;
-  background: url('../img/waterfall.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  /*FLEX BOX TITLE*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 200px;
+  margin: 0;
 }
 .jumbotron-image h1 {
-  font-family: 'Black Ops One', cursive;
-  text-transform: uppercase;
-  font-size: 100px;
-  font-weight: bold;
-  color: #fff;
   text-align: center;
-  text-shadow: 5px 5px 1px #000;
-}
-.jumbotron p {
-  font-family: 'Source Code Pro', 600;
-  color: white;
-  text-align: center;
-  text-shadow: 1px 1px 1px #000;
-}
-/* TEXT GLOWING ANIMATION AND EFFECTS*/
-.jumbotron-image h1:hover {
-	animation: glowtext 1s infinite alternate;
-}
-/* Different states of overriding the color of links */
-/* http://stackoverflow.com/questions/10312857/blue-and-purple-default-links-how-to-remove */
-/*.jumbotron-image a, .jumbotron-image a:visited, .jumbotron-image a:hover, .jumbotron-image a:focus, .jumbotron-image a:hover, .jumbotron-image a:active {
-	text-decoration: none;
-}*/
-@keyframes glowtext {
-    to {
-    	text-shadow: 0px 0px 10px yellow;
-    }
 }
 
-/*==========CAROUSEL==========*/
-.item {
-  height: 100vh;
-}
-.slider-background-one {
-  /*min-height: 100vh;*/
-  max-height: 100%;
-  width: 100%;
-}
-.slider-background-two {
-  /*min-height: 100vh;*/
-  max-height: 100%;
-  width: 100%;
-}
-.slider-background-three {
-  /*min-height: 100vh;*/
-  max-height: 100%;
-  width: 100%;
-}
-.slider-background-flex {
-  background-color: transparent;
-  height: 100%;
-  width: 100%;
-}
-/*==========FLEXBOX IN CAROUSEL==========*/
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.flex-item {
-  height: 400px;
-  max-width: 400px;
-  /*border: 1px solid black;*/
-  background-color: white;
-  color: black;
-}
-.flex-item img {
-  height: 400px;
-  width: 400px;
-}
-
-/*==========ABOUT==========*/
-.about-background {
-  padding-top: 50px;
-}
-.about-content h1 {
-  font-family: 'Black Ops One', cursive;
-  font-size: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-  text-shadow: 5px 5px 1px #000;
-}
-.about-content p {
-  font-family: 'Indie Flower', cursive;
-  color: white;
-  font-size: 30px;
-}
-.about-content-left {
-  color: white;
-}
-.about-content-left .thumbnail {
-  height: 200px;
-  width: 200px;
-}
-.about-content-left .caption {
-  text-align: center;
-}
-.about-content-left p {
-  font-family: 'Indie Flower', cursive;
-  color: white;
-  font-size: 30px;
-}
-.about-content-left .thumbnail {
-  background-color: transparent;
-  border: none;
-}
-.about-content-left img {
-  background-color: white;
-  border: 5px solid black;
-  border-radius: 50%;
-}
-.about-content-right {
-  color: white;
-}
-.about-content-right {
-  text-align: center;
-}
-.about-content-right p {
-  font-family: 'Indie Flower', cursive;
-  font-size: 30px;
-}
-.about-content-right a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 40px;
-}
-.fa-linkedin-square:before {
- 	content: "\f08c";
-	color: #0077B5;
-}
-.fa-github:before {
-  content: "\f09b";
-  color: black;
-}
-
-/*==========PORTFOLIO==========*/
-.portfolio-content {
-  padding-top: 50px;
-}
-.portfolio-content h1 {
-  font-family: 'Black Ops One', cursive;
-  font-size: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-  text-shadow: 5px 5px 1px #000;
-}
-.portfolio-content p {
-  font-family: 'Indie Flower', cursive;
-  color: white;
-  font-size: 30px;
-}
-.flex-item-test img {
-  width: 400px;
-  height: 400px;
-}
-.flex-item-test h3 {
-  text-align: center;
-}
-/*==========FLEXBOX IN PORTFOLIO==========*/
-.flex-container-test {
+/*MAIN CONTAINER*/
+.main-container {
+  margin-top: 50px;
   min-height: 500px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.flex-item-test {
-  min-height: 500px;
-  width: 400px;
   border: 1px solid black;
-  background-color: white;
+  border-radius: 5%;
 }
-.flex-item-test p {
+.main-container h1 {
   text-align: center;
-  padding: 10px;
-}
-
-/*==========CONTACT==========*/
-.contact-background {
-  padding-top: 50px;
-}
-.contact-verbiage h1 {
-  font-family: 'Black Ops One', cursive;
-  font-size: 50px;
   text-transform: uppercase;
+  font-weight: bold;
+}
+.main-container h2 {
   text-align: center;
-  font-weight: bold;
-  color: white;
-  text-shadow: 5px 5px 1px #000;
 }
-.contact-paragraph-text {
-  font-family: 'Indie Flower', cursive;
-  color: white;
-  font-size: 30px;
-}
-.contact-verbiage {
-  padding-bottom: 50px;
-}
-.form-group label {
-  color: #fff;
-}
-.contact-form-box {
-  background-color: blue;
-  padding: 10px;
-}
-.checkbox-container {
-  background-color: #fff;
-  border-radius: 5px;
-  padding-top: 10px;
-  padding-left: 10px;
-  height: 80px;
-}
-.checkbox-container img {
-  height: 60px;
-  width: 60px;
-}
-input[type=checkbox] {
-  /* All browsers except webkit*/
-  transform: scale(1.5);
-  /* Webkit browsers*/
-  -webkit-transform: scale(1.5);
-}
-.map-title {
-  font-family: 'Source Code Pro', 600;
-  color: #fff;
-  font-weight: bold;
-  font-size: 12px;
-  margin: 0;
-  padding-top: 10px;
-}
-.map-info {
-  font-family: 'Source Code Pro', 600;
-  font-size: 20px;
-  color: #fff;
+.main-container p {
+  text-align: center;
+  margin: 10px;
 }
 
-/*==========RESOURCES==========*/
-.resources-content {
-  padding-top: 50px;
+/*SERVICES*/
+.services-container {
+  margin-top: 50px;
   min-height: 500px;
+  border: 1px solid black;
+  border-radius: 5%;
 }
-.resources-content h1 {
-  font-family: 'Black Ops One', cursive;
-  font-size: 50px;
-  text-transform: uppercase;
+.services-container h1 {
   text-align: center;
+  text-transform: uppercase;
   font-weight: bold;
-  color: white;
-  text-shadow: 5px 5px 1px #000;
 }
-.resources-content p {
-  font-family: 'Indie Flower', cursive;
-  color: white;
-  font-size: 30px;
+.services-container h2 {
+  text-align: center;
 }
-.resources-content a {
-  color: white;
-}
-.resources-content a:focus, .resources-content a:hover {
-  text-decoration: none;
-  color: yellow;
+.services-container p {
+  text-align: center;
+  margin: 10px;
 }
 
-/*==========MEDIA==========*/
+/*PARTS*/
+.parts-container {
+  margin-top: 50px;
+  min-height: 500px;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+.parts-container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*TESTIMONIALS*/
+.testimonials-container {
+  margin-top: 50px;
+  min-height: 500px;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+.testimonials-container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.testimonials-container h2 {
+  text-align: center;
+}
+.testimonials-container p {
+  text-align: center;
+  margin: 10px;
+}
+
+/*CONTACT*/
+.contact-container {
+  margin-top: 50px;
+  min-height: 500px;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+.contact-container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact-container h2 {
+  text-align: center;
+}
+.contact-container p {
+  text-align: center;
+  margin: 10px;
+}
+.google-maps-container {
+  text-align: center;
+}
+/*.google-maps-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin: 25px;
+}*/
+/*.google-maps-container  iframe, .google-maps-container  object, .google-maps-container  embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}*/
+
+/*MEDIA*/
 .media-container {
-  background: #333; /* grey */
+  margin-top: 50px;
+  background: #333;
 	text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 .media-links {
   padding: 10px;
 	word-spacing: 5px;
   font-weight: bold;
+}
+.media-links li {
+  display: inline-block;
 }
 .media-links a {
 	text-decoration: none;
@@ -357,337 +164,23 @@ input[type=checkbox] {
 	content: "\f167";
 	color: #b31217;
 }
-.fa-twitch:before {
-	content: "\f1e8";
-	color: #6441a5;
-}
 .fa-instagram:before {
 	content: "\f16d";
 	color: #125688;
 }
 
-/*==========FOOTER==========*/
+/*FOOTER*/
 .footer {
-  background-color: black;
+  background-color: #333;
   color: white;
   text-align: center;
   font-weight: bold;
 }
-
-/*=================================*/
-/*=================================*/
-/*==========MEDIA QUERIES==========*/
-/*=================================*/
-/*=================================*/
-
-/*
-https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries
-*/
-
-/*==================================================
-=            Bootstrap 3 Media Queries             =
-==================================================*/
-
-/*==========  Non-Mobile First Method  ==========*/
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (max-width : 1200px) {
-      /*==========NAVBAR==========*/
-      /*==========JUMBOTRON==========*/
-      /*==========CAROUSEL==========*/
-      /*==========FLEXBOX IN CAROUSEL==========*/
-      /*==========ABOUT==========*/
-      /*==========PORTFOLIO==========*/
-      /*==========FLEXBOX IN PORTFOLIO==========*/
-      /*==========CONTACT==========*/
-      /*==========RESOURCES==========*/
-      /*==========MEDIA==========*/
-      /*==========FOOTER==========*/
-
-    }
-
-    /* Medium Devices, Desktops */
-    @media only screen and (max-width : 992px) {
-      /*==========CAROUSEL==========*/
-      .item {
-        height: 65vh;
-      }
-      .carousel-caption h2 {
-        font-size: 20px;
-      }
-      .carousel-caption p {
-        font-size: 15px;
-      }
-      .slider-background-one {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-two {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-three {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-flex {
-        background-color: transparent;
-        height: 100%;
-        width: 100%;
-      }
-
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px) {
-      /*==========CAROUSEL==========*/
-      .item {
-        height: 65vh;
-      }
-      .carousel-caption h2 {
-        font-size: 20px;
-      }
-      .carousel-caption p {
-        font-size: 15px;
-      }
-      .slider-background-one {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-two {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-three {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-flex {
-        background-color: transparent;
-        height: 100%;
-        width: 100%;
-      }
-
-    }
-
-    /* Extra Small Devices, Phones */
-    @media only screen and (max-width : 480px) {
-      /*==========JUMBOTRON==========*/
-      .jumbotron-image h1 {
-        font-family: 'Black Ops One', cursive;
-        text-transform: uppercase;
-        font-size: 40px;
-        font-weight: bold;
-        color: #fff;
-        text-align: center;
-        text-shadow: 5px 5px 1px #000;
-      }
-      .jumbotron p {
-        font-family: 'Source Code Pro', 600;
-        color: white;
-        text-align: center;
-        font-size: 16px;
-      }
-      /*==========CAROUSEL==========*/
-      .item {
-        height: 65vh;
-      }
-      .carousel-caption h2 {
-        font-size: 20px;
-      }
-      .carousel-caption p {
-        font-size: 15px;
-      }
-      .slider-background-one {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-two {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-three {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-flex {
-        background-color: transparent;
-        height: 100%;
-        width: 100%;
-      }
-      /*==========FLEXBOX IN CAROUSEL==========*/
-      .flex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-      }
-      .flex-item {
-        height: 200px;
-        max-width: 200px;
-        background-color: white;
-        color: black;
-      }
-      .flex-item img {
-        height: 200px;
-        width: 200px;
-      }
-      /*==========ABOUT==========*/
-      ..about-content h1 {
-        font-size: 40px;
-      }
-      .about-content p {
-        font-size: 20px;
-        text-align: center;
-      }
-      .about-content-left p {
-        font-size: 20px;
-      }
-      .about-content-right p {
-        font-size: 20px;
-      }
-      /*==========PORTFOLIO==========*/
-      .portfolio-content h1 {
-        font-size: 40px;
-      }
-      .portfolio-content p {
-        font-size: 20px;
-      }
-      /*==========CONTACT==========*/
-      .contact-verbiage h1 {
-        font-size: 40px;
-      }
-      .contact-paragraph-text {
-        font-size: 20px;
-      }
-      .map-section iframe {
-        text-align: center;
-        height: 250px;
-        width: 250px;
-      }
-      /*==========RESOURCES==========*/
-      .resources-content h1 {
-        font-size: 40px;
-      }
-      .resources-content p {
-        font-size: 20px;
-      }
-      /*==========MEDIA==========*/
-      .media-container {
-        display: flex;
-        flex-direction: column;
-      }
-
-    }
-
-    /* Custom, iPhone Retina */
-    @media only screen and (max-width : 320px) {
-      /*==========JUMBOTRON==========*/
-      .jumbotron-image h1 {
-        font-family: 'Black Ops One', cursive;
-        text-transform: uppercase;
-        font-size: 40px;
-        font-weight: bold;
-        color: #fff;
-        text-align: center;
-        text-shadow: 5px 5px 1px #000;
-      }
-      .jumbotron p {
-        font-family: 'Source Code Pro', 600;
-        color: white;
-        text-align: center;
-        font-size: 16px;
-      }
-      /*==========CAROUSEL==========*/
-      .item {
-        height: 65vh;
-      }
-      .carousel-caption h2 {
-        font-size: 20px;
-      }
-      .carousel-caption p {
-        font-size: 15px;
-      }
-      .slider-background-one {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-two {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-three {
-        min-height: 65vh;
-        width: 100%;
-      }
-      .slider-background-flex {
-        background-color: transparent;
-        height: 100%;
-        width: 100%;
-      }
-      /*==========FLEXBOX IN CAROUSEL==========*/
-      .flex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-      }
-      .flex-item {
-        height: 200px;
-        max-width: 200px;
-        background-color: white;
-        color: black;
-      }
-      .flex-item img {
-        height: 200px;
-        width: 200px;
-      }
-      /*==========ABOUT==========*/
-      ..about-content h1 {
-        font-size: 40px;
-      }
-      .about-content p {
-        font-size: 20px;
-        text-align: center;
-      }
-      .about-content-left p {
-        font-size: 20px;
-      }
-      .about-content-right p {
-        font-size: 20px;
-      }
-      /*==========PORTFOLIO==========*/
-      .portfolio-content h1 {
-        font-size: 40px;
-      }
-      .portfolio-content p {
-        font-size: 20px;
-      }
-      /*==========CONTACT==========*/
-      .contact-verbiage h1 {
-        font-size: 40px;
-      }
-      .contact-paragraph-text {
-        font-size: 20px;
-      }
-      .map-section iframe {
-        text-align: center;
-        height: 250px;
-        width: 250px;
-      }
-      /*==========RESOURCES==========*/
-      .resources-content h1 {
-        font-size: 40px;
-      }
-      .resources-content p {
-        font-size: 20px;
-      }
-      /*==========MEDIA==========*/
-      .media-container {
-        display: flex;
-        flex-direction: column;
-      }
-
-    }
+/*TekPro PC Link*/
+.footer a {
+  color: white;
+}
+.footer a:focus, .footer a:hover {
+  text-decoration: none;
+  color: yellow
+}
